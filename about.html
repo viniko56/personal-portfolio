@@ -1,57 +1,131 @@
-<!DOCTYPE html><="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>About | VinilNk</title>
 
-<!--  Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="about.css">
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
 </head>
 
 <body>
 
-<!--  NAV -->
+<!-- Cursor -->
+<div class="cursor"></div>
+
+<!-- NAV -->
 <nav>
-    <a href="index.html">About</a>
-    <a href="#">Skills</a>
-    <a href="#">Projects</a>
-    <a href="#">Contact</a>
+<div class="nav-box">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="index.html#projects">Projects</a>
+<a href="index.html#contact">Contact</a>
+</div>
 </nav>
 
 <div class="container">
 
-    <!--  LEFT -->
-    <div class="fade">
+<!-- LEFT -->
+<div data-aos="fade-right">
 
-        <div class="text-box">
-            <p>
-                This portfolio page represents my approach to building modern and 
-                user-friendly digital experiences. I focus on combining clean design 
-                with practical functionality.
-            </p>
+<div class="box">
+<p>
+I create immersive, modern web experiences using cutting-edge technologies,
+focusing on performance and visual design.
+</p>
 
-            <p>
-                I aim to design intuitive interfaces, write efficient code, and deliver 
-                seamless experiences that work beautifully across all devices.
-            </p>
-        </div>
+<a href="resume.pdf" style="display:inline-block;margin-top:10px;background:#00adb5;padding:8px 15px;border-radius:20px;color:white;text-decoration:none;">
+Download Resume
+</a>
+</div>
 
-        <!-- Decorative image -->
-        <img src="https://picsum.photos/200/200?random=1" style="margin-top:20px; border-radius:20px;">
+<!-- Skills -->
+<div class="box" data-aos="zoom-in">
 
-        <div class="sub-text">
-            <h3>TARGET AUDIENCE</h3>
-            <p>
-                I create solutions for users who value simplicity, performance, and 
-                clean design. My goal is to build meaningful experiences that connect 
-                users with technology in a natural and intuitive way.
-            </p>
-        </div>
+<h3>Skills</h3>
 
-    </div>
+<p>HTML</p>
+<div class="bar" style="width:90%"></div>
 
-    <!--  RIGHT -->
+<p>JavaScript</p>
+<div class="bar" style="width:80%"></div>
 
+<p>React</p>
+<div class="bar" style="width:75%"></div>
+
+</div>
+
+<!-- Timeline -->
+<div class="box timeline" data-aos="fade-up">
+
+<h3>Education</h3>
+
+<div class="timeline-item">
+<p>Bachelor of Computer Science (2022–2025)</p>
+</div>
+
+<div class="timeline-item">
+<p>Higher Secondary (2020–2022)</p>
+</div>
+
+<h3>Experience</h3>
+
+<div class="timeline-item">
+<p>Intern Developer (2025)</p>
+</div>
+
+</div>
+
+<!-- Cards -->
+<div class="card" data-aos="flip-left">
+<h4>🚀 Innovation</h4>
+<p>I build solutions that stand out.</p>
+</div>
+
+<div class="card" data-aos="flip-right">
+<h4>💻 Development</h4>
+<p>Modern scalable apps.</p>
+</div>
+
+</div>
+
+<!-- RIGHT -->
+<div class="right" data-aos="fade-left">
+
+<img src="https://picsum.photos/300/400">
+<br><br>
+<img src="https://picsum.photos/280/380">
+
+</div>
+
+</div>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({duration:1200});
+
+/*   Cursor */
+const cursor=document.querySelector('.cursor');
+document.addEventListener('mousemove',e=>{
+    cursor.style.top=e.clientY+"px";
+    cursor.style.left=e.clientX+"px";
+});
+
+/*   Parallax */
+window.addEventListener('scroll',()=>{
+    let y=window.scrollY;
+    document.querySelectorAll('.parallax').forEach(el=>{
+        el.style.transform=`translateY(${y*0.2}px)`;
+    });
+});
+</script>
+
+</body>
+</html>
