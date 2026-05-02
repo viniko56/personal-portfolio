@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ✅ SEO Meta Tags -->
+    <title>Vinik | Personal Portfolio</title>
+    <meta name="description" content="Vinik's personal portfolio showcasing skills, projects, and experience in web development and data analysis.">
+    <meta name="keywords" content="vinik, portfolio, web developer, data analyst, projects, HTML, CSS, JavaScript">
+    <meta name="author" content="Vinik056">
+
+    <!-- ✅ Open Graph (for social media sharing) -->
+    <meta property="og:title" content="Vinik | Portfolio">
+    <meta property="og:description" content="Explore my projects, skills, and experience.">
+    <meta property="og:type" content="website">
+
+    <!-- ✅ Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #444;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #00adb5;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        button {
+            background: #00adb5;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #007b80;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Hi, I'm Vinik 👋</h1>
+    <p>Web Developer | Data Enthusiast</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate developer who loves building web applications 
+            and exploring new technologies.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="card">
+        <h2>Skills</h2>
+        <p>HTML | CSS | JavaScript | Python | SQL</p>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="card">
+        <h2>Projects</h2>
+        <ul style="list-style:none; padding:0;">
+            <li>✅ Portfolio Website</li>
+            <li>✅ Weather App</li>
+            <li>✅ To-Do App</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="card">
+        <h2>Contact Me</h2>
+        <p>Email: your-email@example.com</p>
+        <button onclick="sayHello()">Say Hello</button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Vinik056 | All Rights Reserved</p>
+</footer>
+
+<script>
+    function sayHello() {
+        alert("Thanks for visiting my portfolio!");
+    }
+</script>
+
+</body>
+</html>
